@@ -1,0 +1,49 @@
+import random
+#lab2
+print("to activate program input 0")
+x = int(input())#this is input
+if x==0:
+    print("Kusain D.R. bachelor third-year student")
+else:
+    print("rerun and input 0")
+
+#lab3
+i=0
+while i<random.randint(1,10):
+    for i in range(11):
+        i=i+1
+print(i)
+m4ss = []
+for k in range(random.randrange(4,13,4)):
+    m4ss.append(random.randint(10,20))#int
+    m4ss.append(random.random())#float
+    m4ss.append("lol")#str
+    m4ss.append(True)#bool
+print(m4ss)
+for l in enumerate(m4ss):
+    print(l)
+print("InrowA-B")
+a=int(input())
+b=int(input())
+if a<b:
+    for i in range(b+1):
+        if i>=a:
+            print(i,end=' ')
+elif a>b:
+    for i in range(a+1):
+        if i>=b:
+            print(i,end=' ')
+print("\nreverse")
+for i in range(10):
+    if (i%2==1):
+        print(10-i,end=' ')
+print("\ngame")
+losted=0
+finder=0
+for i in range(1,10): #9карт всего
+    if i!=9:
+        losted=i+losted
+        print(i,end=' ')
+for i in range(1,10):
+    finder=i+finder
+print("\nthe losted one is ",finder-losted)
